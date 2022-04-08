@@ -22,7 +22,7 @@ namespace RentalCars.Infrastructure.Repositories.Relational.Core
 
         public IQueryable<TEntity> Query(int take = 100) => this._dbSet.AsNoTracking();
 
-        public IQueryable<TEntity> QueryTracking(int take = 100) => this._dbSet.AsNoTracking();
+        public IQueryable<TEntity> QueryTracking(int take = 100) => this._dbSet;
 
         public IQueryable<TProjetion> Query<TProjetion>(Expression<Func<TEntity, bool>> predicate) where TProjetion : class
         {

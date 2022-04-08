@@ -17,11 +17,11 @@ namespace RentalCars.Infrastructure.Repositories.Relational.Configurations
                 .HasColumnName("Id");
 
             builder.Property(e => e.Type).HasColumnName("Type");
-            builder.Property(e => e.ModelYear).HasColumnName("Type");
-            builder.Property(e => e.ManufactureYear).HasColumnName("Type");
-            builder.Property(e => e.Brand).HasColumnName("Type");
-            builder.Property(e => e.Color).HasColumnName("Type");
-            builder.Property(e => e.Plate).HasColumnName("Type");
+            builder.Property(e => e.ModelYear).HasColumnName("ModelYear");
+            builder.Property(e => e.ManufactureYear).HasColumnName("ManufactureYear");
+            builder.Property(e => e.Brand).HasColumnName("Brand");
+            builder.Property(e => e.Color).HasColumnName("Color");
+            builder.Property(e => e.Plate).HasColumnName("Plate");
         }
     }
 }
