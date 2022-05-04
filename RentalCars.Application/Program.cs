@@ -3,8 +3,10 @@ using RentalCars.CrossCutting;
 var builder = WebApplication.CreateBuilder(args);
 
 _ = builder.Services.AddDomainServices();
-_ = builder.Services.AddSqlServerDatabase(builder.Configuration, true);
-_ = builder.Services.AddRepositories();
+//_ = builder.Services.AddSqlServerDatabase(builder.Configuration, true);
+_ = builder.Services.AddSingletonDatabase();
+//_ = builder.Services.AddRepositories();
+_ = builder.Services.AddRepositoriesSingletonDatabase();
 _ = builder.Services.AddAutoMapper();
 
 _ = builder.Services.AddControllers();

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RentalCars.Domain\RentalCars.Domain.csproj" />
+    <ProjectReference Include="..\RentalCars.Infrastructure.Data.Singleton\RentalCars.Infrastructure.Data.Singleton.csproj" />
     <ProjectReference Include="..\RentalCars.Infrastructure\RentalCars.Infrastructure.csproj" />
   </ItemGroup>
 

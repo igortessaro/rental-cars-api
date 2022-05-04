@@ -12,5 +12,12 @@ namespace RentalCars.CrossCutting
 
             return services;
         }
+
+        public static IServiceCollection AddRepositoriesSingletonDatabase(this IServiceCollection services)
+        {
+            services.AddScoped<ICarRespository, Infrastructure.Data.Singleton.CarRespository>();
+
+            return services;
+        }
     }
 }
